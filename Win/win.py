@@ -39,15 +39,16 @@ img = cv2.imread("/media/wuyu/Data/日常/2538C8073D539443719C07D9CC3F491F.jpg")
 # 分离BGR通道
 b, g, r = cv2.split(img)
 
+# 单b输出
+b_channel = np.zeros_like(img)
+b_channel[:, :, 0] = b
 # 单R输出
 r_channel = np.zeros_like(img)
 r_channel[:, :, 2] = r
 # 单g输出
 g_channel = np.zeros_like(img)
 g_channel[:, :, 1] = g
-# 单b输出
-b_channel = np.zeros_like(img)
-b_channel[:, :, 0] = b
+
 
 # 保存
 cv2.imwrite("r_channel.png", r_channel)
