@@ -61,7 +61,7 @@ void show2(){
 string score::classname="一班";
 
 
- 
+ //多态
  void test01(){
     Student s1;
 s1.name="张三";
