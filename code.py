@@ -22,9 +22,10 @@ class Student(score):
         print(f"数学: {self.Math}")
         print(f"物理: {self.Physics}")
 
-
+#多态
 s1=Student("张三",1,100,90,80,70)
 s2=Student("李四",2,60,50,40,30)        
 s1.show()
 s2.show()
-    
+
+
